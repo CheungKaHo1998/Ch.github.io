@@ -102,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/10/两篇博客/" data-id="cjvjnyw1c0003wcv6lsx9j7jc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/10/两篇博客/" data-id="cjvjo7ej90003k4v602cszlxk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -253,5 +253,16 @@
 
 
   </div>
+    <div>
+       {% if theme.daovoice %}
+  <script>
+  (function(i,s,o,g,r,a,m){i["DaoVoiceObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;a.charset="utf-8";m.parentNode.insertBefore(a,m)})(window,document,"script",('https:' == document.location.protocol ? 'https:' : 'http:') + "//widget.daovoice.io/widget/0f81ff2f.js","daovoice")
+  daovoice('init', {
+      app_id: "{{theme.daovoice_app_id}}"
+    });
+  daovoice('update');
+  </script>
+{% endif %}
+    </div>
 </body>
 </html>
