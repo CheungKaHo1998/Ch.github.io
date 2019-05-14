@@ -79,6 +79,54 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-【JavaScriptDOM】 学习笔记 (二)" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/14/【JavaScriptDOM】 学习笔记 (二)/" class="article-date">
+  <time datetime="2019-05-14T02:55:47.000Z" itemprop="datePublished">2019-05-14</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/14/【JavaScriptDOM】 学习笔记 (二)/">【JavaScriptDOM】 学习笔记 (二)</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><p>  1.元素节点，如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素</p>
+<h6 id="文本节点"><a href="#文本节点" class="headerlink" title="文本节点"></a>文本节点</h6><p>比如P标签包含着文本。</p>
+<h6 id="属性节点"><a href="#属性节点" class="headerlink" title="属性节点"></a>属性节点</h6><p> 属性节点包含在元素节点中</p>
+<h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><p>  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。</p>
+<h6 id="getElementById"><a href="#getElementById" class="headerlink" title="getElementById"></a>getElementById</h6><p>  这个方法将返回一个与那个有着给定id属性值的元素节点对应的对象。区分大小写。他是document对象特有的函数，函数名后面必有由圆括号，里面包含函数的参数。getElementById方法只有一个参数：你想获得哪个元素的id属性的值，这个id值必须放在引号里。<br>  列子<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">alert(typeof document.getElementById(“获取的ID”))；//typeo操作可以高随我们他的操作数是字符串、数值、函数、布尔值还是对象。事实上，文档中的每一个元素都是一个对象</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure></p>
+<h6 id="getElementsByTagName"><a href="#getElementsByTagName" class="headerlink" title="getElementsByTagName"></a>getElementsByTagName</h6><p>方法返回一个对象数组，来获取没有id属性的对象。</p>
+<h6 id="getElementsByClassName"><a href="#getElementsByClassName" class="headerlink" title="getElementsByClassName"></a>getElementsByClassName</h6><p> 这个方法通过class属性中的类名来访问元素，只接受一个参数，就是类名，可以指定多个类名，只要在字符串参数中用空格分类名即可。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p> 1.一份文档就是一颗节点数<br> 2.节点分为不同类型：元素节点、属性节点、文本节点。<br> 3.getElementById将返回一个对象，该对象对应着文档里的一个特定的元素节点<br> 4.getElementsByTagName和getElementByclassName将返回一个对象数组，它们分别对应着文档里的一组特定的元素节点。<br> 5.每个节点都是一个对象</p>
+<p> ###获取和设置属性</p>
+<h6 id="getAttribute"><a href="#getAttribute" class="headerlink" title="getAttribute"></a>getAttribute</h6><p> 是一个函数，只有一个参数-你打算查询属性的名字，不属于document对象，不能通过document对象调用，只能通过元素节点调用。</p>
+<h6 id="setAttribute"><a href="#setAttribute" class="headerlink" title="setAttribute"></a>setAttribute</h6><p>只能用于元素节点</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>1.getElementById<br>2.getElementsByTagName<br>3.getElementByClassName<br>4.getAttribute<br>5.setAttribute<br>这五个方法是将哟啊编写的许多DOM脚本的基石。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/05/14/【JavaScriptDOM】 学习笔记 (二)/" data-id="cjvn7h0e60003rcv6mae9adkw" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="javascript-【JavaScriptDOM】学习笔记(一) " class="article article-type-javascript" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/13/【JavaScriptDOM】学习笔记(一) /" class="article-date">
@@ -108,7 +156,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/13/【JavaScriptDOM】学习笔记(一) /" data-id="cjvmhxyy10002n0v6clrw0vhn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/13/【JavaScriptDOM】学习笔记(一) /" data-id="cjvn7h0e70004rcv6d4dmv78h" class="article-share-link">Share</a>
       
       
     </footer>
@@ -150,7 +198,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/11/【H5】学习笔记（一）/" data-id="cjvmhxyy20003n0v60rbrleve" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/11/【H5】学习笔记（一）/" data-id="cjvn7h0dx0000rcv6b561rlpe" class="article-share-link">Share</a>
       
       
     </footer>
@@ -190,7 +238,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/10/两篇博客/" data-id="cjvmhxyy30004n0v698467nbl" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/10/两篇博客/" data-id="cjvn7h0el0005rcv60g8w9jfv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -227,7 +275,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/10/GitHUb项目自定义域名/" data-id="cjvmhxyxz0001n0v6waoczri5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/10/GitHUb项目自定义域名/" data-id="cjvn7h0e40001rcv6sxdnim1i" class="article-share-link">Share</a>
       
       
     </footer>
@@ -264,7 +312,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/09/cmd远程服务Telnet播放星球大战/" data-id="cjvmhxyxu0000n0v6mwn2vvw1" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/09/cmd远程服务Telnet播放星球大战/" data-id="cjvn7h0e50002rcv61tdew6s3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -301,7 +349,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/08/这是我的第一篇博客/" data-id="cjvmhxyyh0005n0v6t4dzp2ie" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/08/这是我的第一篇博客/" data-id="cjvn7h0en0006rcv66fanmadd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -343,6 +391,10 @@
       <ul>
         
           <li>
+            <a href="/2019/05/14/【JavaScriptDOM】 学习笔记 (二)/">【JavaScriptDOM】 学习笔记 (二)</a>
+          </li>
+        
+          <li>
             <a href="/2019/05/13/【JavaScriptDOM】学习笔记(一) /">【JavaScriptDOM】 学习笔记 (一)</a>
           </li>
         
@@ -356,10 +408,6 @@
         
           <li>
             <a href="/2019/05/10/GitHUb项目自定义域名/">GitHUb项目自定义域名</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/09/cmd远程服务Telnet播放星球大战/">CMD远程服务Telnet播放星球大战</a>
           </li>
         
       </ul>
