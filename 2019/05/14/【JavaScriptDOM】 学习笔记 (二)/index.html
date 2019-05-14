@@ -7,17 +7,17 @@
   
   <title>【JavaScriptDOM】 学习笔记 (二) | CheungKaHo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="节点  1.元素节点，如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素 文本节点比如P标签包含着文本。 属性节点 属性节点包含在元素节点中 获取元素  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。 getElementById  这个方法将返回一个与那个有着给定id属性值的元素节点对应的对象。区分大小写。他">
+  <meta name="description" content="节点元素节点如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素 文本节点比如P标签包含着文本。 属性节点 属性节点包含在元素节点中 获取元素  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。 getElementById  这个方法将返回一个与那个有着给定id属性值的元素节点对应的对象。区分大小写。他是docu">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【JavaScriptDOM】 学习笔记 (二)">
 <meta property="og:url" content="http://yoursite.com/2019/05/14/【JavaScriptDOM】 学习笔记 (二)/index.html">
 <meta property="og:site_name" content="CheungKaHo">
-<meta property="og:description" content="节点  1.元素节点，如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素 文本节点比如P标签包含着文本。 属性节点 属性节点包含在元素节点中 获取元素  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。 getElementById  这个方法将返回一个与那个有着给定id属性值的元素节点对应的对象。区分大小写。他">
+<meta property="og:description" content="节点元素节点如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素 文本节点比如P标签包含着文本。 属性节点 属性节点包含在元素节点中 获取元素  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。 getElementById  这个方法将返回一个与那个有着给定id属性值的元素节点对应的对象。区分大小写。他是docu">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-14T02:57:00.793Z">
+<meta property="og:updated_time" content="2019-05-14T03:02:04.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="【JavaScriptDOM】 学习笔记 (二)">
-<meta name="twitter:description" content="节点  1.元素节点，如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素 文本节点比如P标签包含着文本。 属性节点 属性节点包含在元素节点中 获取元素  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。 getElementById  这个方法将返回一个与那个有着给定id属性值的元素节点对应的对象。区分大小写。他">
+<meta name="twitter:description" content="节点元素节点如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素 文本节点比如P标签包含着文本。 属性节点 属性节点包含在元素节点中 获取元素  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。 getElementById  这个方法将返回一个与那个有着给定id属性值的元素节点对应的对象。区分大小写。他是docu">
   
     <link rel="alternate" href="/atom.xml" title="CheungKaHo" type="application/atom+xml">
   
@@ -103,7 +103,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><p>  1.元素节点，如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素</p>
+        <h3 id="节点"><a href="#节点" class="headerlink" title="节点"></a>节点</h3><h6 id="元素节点"><a href="#元素节点" class="headerlink" title="元素节点"></a>元素节点</h6><p>如body、p和ul之类的标签，这些元素在文档中的布局形成了文档的结构，html就是节点树的根元素</p>
 <h6 id="文本节点"><a href="#文本节点" class="headerlink" title="文本节点"></a>文本节点</h6><p>比如P标签包含着文本。</p>
 <h6 id="属性节点"><a href="#属性节点" class="headerlink" title="属性节点"></a>属性节点</h6><p> 属性节点包含在元素节点中</p>
 <h3 id="获取元素"><a href="#获取元素" class="headerlink" title="获取元素"></a>获取元素</h3><p>  有三种DOM方法可以获取元素节点，分别是通过元素ID、通过标签名字何通过类名字来获取。</p>
@@ -111,15 +111,14 @@
 <h6 id="getElementsByTagName"><a href="#getElementsByTagName" class="headerlink" title="getElementsByTagName"></a>getElementsByTagName</h6><p>方法返回一个对象数组，来获取没有id属性的对象。</p>
 <h6 id="getElementsByClassName"><a href="#getElementsByClassName" class="headerlink" title="getElementsByClassName"></a>getElementsByClassName</h6><p> 这个方法通过class属性中的类名来访问元素，只接受一个参数，就是类名，可以指定多个类名，只要在字符串参数中用空格分类名即可。</p>
 <h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p> 1.一份文档就是一颗节点数<br> 2.节点分为不同类型：元素节点、属性节点、文本节点。<br> 3.getElementById将返回一个对象，该对象对应着文档里的一个特定的元素节点<br> 4.getElementsByTagName和getElementByclassName将返回一个对象数组，它们分别对应着文档里的一组特定的元素节点。<br> 5.每个节点都是一个对象</p>
-<p> ###获取和设置属性</p>
-<h6 id="getAttribute"><a href="#getAttribute" class="headerlink" title="getAttribute"></a>getAttribute</h6><p> 是一个函数，只有一个参数-你打算查询属性的名字，不属于document对象，不能通过document对象调用，只能通过元素节点调用。</p>
+<h3 id="获取和设置属性"><a href="#获取和设置属性" class="headerlink" title="获取和设置属性"></a>获取和设置属性</h3><h6 id="getAttribute"><a href="#getAttribute" class="headerlink" title="getAttribute"></a>getAttribute</h6><p> 是一个函数，只有一个参数-你打算查询属性的名字，不属于document对象，不能通过document对象调用，只能通过元素节点调用。</p>
 <h6 id="setAttribute"><a href="#setAttribute" class="headerlink" title="setAttribute"></a>setAttribute</h6><p>只能用于元素节点</p>
-<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>1.getElementById<br>2.getElementsByTagName<br>3.getElementByClassName<br>4.getAttribute<br>5.setAttribute<br>这五个方法是将哟啊编写的许多DOM脚本的基石。</p>
+<h3 id="小结"><a href="#小结" class="headerlink" title="小结"></a>小结</h3><p>1.getElementById<br>2.getElementsByTagName<br>3.getElementByClassName<br>4.getAttribute<br>5.setAttribute<br>这五个方法是编写的许多DOM脚本的基石。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/05/14/【JavaScriptDOM】 学习笔记 (二)/" data-id="cjvn7h0e60003rcv6mae9adkw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/05/14/【JavaScriptDOM】 学习笔记 (二)/" data-id="cjvn7n1r0000244v6wnfg1s4i" class="article-share-link">Share</a>
       
       
     </footer>
